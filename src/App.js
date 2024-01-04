@@ -1,30 +1,30 @@
 import React from 'react';
 import { Link, Element } from 'react-scroll';
-import Page1 from './components/Page1';
-import Page2 from './components/Page2';
-import Page3 from './components/Page3';
+import Home from './components/Home';
+import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
 
 const App = () => {
   return (
     <div>
-      <Link to="page1" smooth={true} duration={500}>
-        Page 1
+      <Link to="home" smooth={true} duration={500}>
+        Home
       </Link>
-      <Link to="page2" smooth={true} duration={500}>
-        Page 2
+      <Link to="aboutMe" smooth={true} duration={500}>
+        About Me
       </Link>
-      <Link to="page3" smooth={true} duration={500}>
-        Page 3
+      <Link to="contactMe" smooth={true} duration={500}>
+        Contact Me
       </Link>
 
-      <Element name="page1">
-        <Page1 />
+      <Element name="home">
+        <Home />
       </Element>
-      <Element name="page2">
-        <Page2 />
+      <Element name="aboutMe">
+        <AboutMe />
       </Element>
-      <Element name="page3">
-        <Page3 />
+      <Element name="contactMe">
+        <ContactMe />
       </Element>
     </div>
   );

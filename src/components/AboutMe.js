@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Page3 = () => {
+const Blog = () => {
   return (
     <div style={{ height: '100vh', backgroundColor: 'lightcoral' }}>
       <h1>Page 3</h1>
@@ -8,4 +8,4 @@ const Page3 = () => {
   );
 };
 
-export default Page3;
+export default Blog;

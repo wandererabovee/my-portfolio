@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Page2 = () => {
+const ContactMe = () => {
   return (
     <div style={{ height: '100vh', backgroundColor: 'lightgreen' }}>
       <h1>Page 2</h1>
@@ -8,4 +8,4 @@ const Page2 = () => {
   );
 };
 
-export default Page2;
+export default ContactMe;

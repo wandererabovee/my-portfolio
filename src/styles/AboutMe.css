@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-.home-container {
+.about-me-container {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   height: 100vh;
@@ -14,18 +14,18 @@
   font-family: 'VT323', monospace;
 }
 
-.title {
+.about-me-title {
   font-size: 8em;
   font-family: 'VT323', monospace;
   margin-bottom: -3%;
 }
 
-.subtitle {
+.about-me-subtitle {
   font-size: 2em;
   font-family: 'VT323', monospace;
 }
 
-.game-box {
+.about-me-blog-box {
   border: 2px solid white; /* Set the border to white */
   padding: 1%;
   margin-top: -17%; /* Adjust the margin-top as needed to move the box up */
@@ -34,37 +34,32 @@
   text-align: center;
 }
 
-.game-box p {
+.about-me-blog-box p {
   font-size: 2em;
   margin-top: 1%;
   margin-bottom: 1%;
   color: white; /* Set the text color to white */
 }
 
-.arrow {
-  font-size: 2em;
-  position: absolute;
-  bottom: -5%;
-  left: 50%;
-  transform: translateX(-50%) rotate(90deg); /* Center horizontally and rotate by 90 degrees */
-}
 
 
 /* Media queries for smaller screens */
 @media screen and (max-width: 768px) {
-  .title {
+  .about-me-title {
     font-size: 5em; /* Adjust the font size for smaller screens */
   }
 
-  .subtitle {
+  .about-me-subtitle {
     font-size: 1.5em; /* Adjust the font size for smaller screens */
   }
 
-  .game-box {
+  .about-me-blog-box {
     margin-top: 2%; /* Adjust the margin for the white box on smaller screens */
   }
 
-  .arrow {
+  .about-me-arrow {
     font-size: 1.5em; /* Adjust the font size for the arrow on smaller screens */
+    position: static;
+    transform: none;
   }
 }

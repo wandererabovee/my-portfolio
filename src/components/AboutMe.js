@@ -1,26 +1,21 @@
+// AboutMe.js
 import React from 'react';
 import '../styles/AboutMe.css'; // Import the CSS file
 
-const Home = () => {
+const AboutMe = () => {
   return (
-    <div className="home-container">
-      <h1 className="title">About Me</h1>
-      <p className="subtitle">My name is Mike Smith aka WandererAbove, I am a aspiring
-Frontend enginner, Game developer, and Linux acolyte.
-Discover a world of thoughts and inspiration by 
-exploring my blog – where my ideas come to life!</p>
+    <div className="about-me-container">
+      <h1 className="about-me-title">About Me</h1>
+      <p className="about-me-subtitle">My name is Mike Smith aka WandererAbove, I am an aspiring Frontend engineer, Game developer, and Linux acolyte. Discover a world of thoughts and inspiration by exploring my blog – where my ideas come to life!</p>
       
-      {/* White box with a link to play the latest game */}
-      <div className="game-box">
-        <p>Click here to play <br />to look at my blog</p>
+      <div className="about-me-blog-box">
+        <p>Click here to play <br />my latest game</p>
       </div>
 
       {/* Arrow symbol */}
-      <div className="arrow">&#62;</div>
-
-      {/* Add more content as needed */}
+      <div className="about-me-arrow">&#62;</div>
     </div>
   );
 };
 
-export default Home;
+export default AboutMe;

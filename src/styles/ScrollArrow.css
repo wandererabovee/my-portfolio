@@ -1,0 +1,21 @@
+/* ScrollArrow.css */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.scroll-arrow {
+  font-family: 'VT323', monospace;
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  color: white; /* Set the color to white */
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-arrow.visible {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  transform: translateX(-50%) rotate(90deg); /* Center and rotate the arrow by 90 degrees */
+}

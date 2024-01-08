@@ -25,27 +25,29 @@
   font-family: 'VT323', monospace;
 }
 
-.about-me-blog-box {
-  border: 2px solid white; /* Set the border to white */
-  padding: 1%;
-  margin-top: -17%; /* Adjust the margin-top as needed to move the box up */
-  margin-bottom: 1%;
-  margin-left: auto; /* Move the box to the right */
-  text-align: center;
+
+.about-me-blog-button {
+  background-color: transparent; /* Set a new background color for the button */
+  color: #ffffff; /* Set a new text color for the button */
+  padding: 1%; /* Adjust the padding as needed */
+  font-family: 'VT323', monospace;
+  font-size: 1.8em; /* Adjust the font size as needed */
+  border: 2px solid #ffffff; /* Add a border to the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  margin-left: auto;
 }
 
-.about-me-blog-box p {
-  font-size: 2em;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  color: white; /* Set the text color to white */
+.about-me-blog-button:hover {
+  background-color: white; /* Change the background color on hover */
+  color: black; /* Change the text color on hover */
 }
 
 
 
 /* Media queries for smaller screens */
 @media screen and (max-width: 768px) {
-  .about-me-title {
+  .about-metitle {
     font-size: 5em; /* Adjust the font size for smaller screens */
   }
 

@@ -41,15 +41,6 @@
   color: white; /* Set the text color to white */
 }
 
-.arrow {
-  font-size: 2em;
-  position: absolute;
-  bottom: -5%;
-  left: 50%;
-  transform: translateX(-50%) rotate(90deg); /* Center horizontally and rotate by 90 degrees */
-}
-
-
 /* Media queries for smaller screens */
 @media screen and (max-width: 768px) {
   .title {

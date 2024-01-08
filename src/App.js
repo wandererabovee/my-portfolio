@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link, Element } from 'react-scroll';
+import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
+import ScrollArrow from './components/ScrollArrow';
 
 const App = () => {
   return (
@@ -17,15 +18,18 @@ const App = () => {
         Contact Me
       </Link>
 
-      <Element name="home">
+      {/* Wrap the Links in a Link container */}
+      <Link to="home" smooth={true} duration={500}>
         <Home />
-      </Element>
-      <Element name="aboutMe">
+      </Link>
+      <Link to="aboutMe" smooth={true} duration={500}>
         <AboutMe />
-      </Element>
-      <Element name="contactMe">
+      </Link>
+      <Link to="contactMe" smooth={true} duration={500}>
         <ContactMe />
-      </Element>
+      </Link>
+
+      <ScrollArrow />
     </div>
   );
 };
